@@ -27,7 +27,7 @@ namespace PulseRate
             {
                 if (!isPeak)
                 {
-                    if (startTime.AddSeconds(20).Hour >= 9)
+                    if (startTime.AddSeconds(20).Hour >= 9 && startTime.Hour < 23)
                         isPeak = true;
                     else
                         isPeak = false;
